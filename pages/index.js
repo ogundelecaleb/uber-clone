@@ -65,7 +65,7 @@ export default function Home() {
 }
 
 const Wrapper = tw.div`
-flex flex-col bg-blue-400 h-screen
+flex flex-col bg-[rgb(43,42,42)] h-screen
 `;
 const ActionItems = tw.div`
 flex-1 p-4
