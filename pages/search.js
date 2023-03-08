@@ -20,7 +20,7 @@ const Search = () => {
         </FromToIcons>
         <InputBoxes>
           <Input
-            placeholder="Enter pickup location"
+            placeholder="Enter pickup State"
             value={pickup}
             onChange={(e) => setPickup(e.target.value)}
           />

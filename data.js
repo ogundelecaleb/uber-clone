@@ -2,19 +2,19 @@ export const carList = [
   {
     imgUrl: "http://i.ibb.co/cyvcpfF/uberx.png",
     service: "UberX",
-    multiplier: 1,
+    multiplier: 0.5,
   },
 
   {
     imgUrl: "http://i.ibb.co/YDYMKny/uberxl.png",
     service: "UberXL",
-    multiplier: 1.5,
+    multiplier: 0.7,
   },
   
   {
     imgUrl: "http://i.ibb.co/Xx4G91m/uberblack.png",
     service: "Black",
-    multiplier: 2,
+    multiplier: 1,
   },
   {
     imgUrl: "http://i.ibb.co/cyvcpfF/uberx.png",
@@ -24,6 +24,6 @@ export const carList = [
   {
     imgUrl: "http://i.ibb.co/1nStPWT/uberblacksuv.png",
     service: "Black SUV",
-    multiplier: 2.8,
+    multiplier: 1.7,
   },
 ];

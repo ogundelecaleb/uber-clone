@@ -22,11 +22,14 @@ export default function Home() {
         setUser(null);
         router.push("/login");
       }
-      console.log(user.photoURL)
+      console.log(user.photoURL);
     });
   }, []);
   return (
     <Wrapper>
+      <ButtonContainer>
+        <Heading>Inter State Transport</Heading>
+      </ButtonContainer>
       <Map />
       <ActionItems>
         <Header>
@@ -34,8 +37,11 @@ export default function Home() {
 
           <Profile>
             <Name>{user && user.name}</Name>
-            <UserImage src={user && user.photoUrl} 
-            onClick={() => signOut(auth)}/>
+            <UserImage
+              alt="user image"
+              src={user && user.photoUrl}
+              onClick={() => signOut(auth)}
+            />
           </Profile>
         </Header>
         <ActionButtons>
@@ -45,9 +51,9 @@ export default function Home() {
               Ride
             </ActionButton>
           </Link>
-          <Link href="">
+          <Link href="/search">
             <ActionButton>
-              <ActionButtionImage src="https://i.ibb.co/n776JLm/bike.png" />
+              <ActionButtionImage src="./travel-bus.png" />
               Wheel
             </ActionButton>
           </Link>
@@ -59,9 +65,8 @@ export default function Home() {
           </Link>
         </ActionButtons>
         <Link href="/search">
-        <InpuButton>Where to?</InpuButton>
+          <InpuButton>Which state are you heading to?</InpuButton>
         </Link>
-        
       </ActionItems>
     </Wrapper>
   );
@@ -70,6 +75,15 @@ export default function Home() {
 const Wrapper = tw.div`
 flex flex-col bg-[rgb(43,42,42)] h-screen
 `;
+
+const ButtonContainer = tw.div`
+bg-[rgb(43,42,42)]  px-4
+`;
+
+const Heading = tw.div`
+text-lg text-gray-200 text-center
+`;
+
 const ActionItems = tw.div`
 flex-1 p-4
 `;
@@ -97,7 +111,7 @@ bg-gray-200 flex-1 p-2  h-38 flex items-center flex-col m-1 justify-center round
 `;
 
 const ActionButtionImage = tw.img`
-h-3/5 `;
+h-20 `;
 
 const InpuButton = tw.div`
 h-20 bg-gray-200 text-2xl p-4 flex items-center mt-8 rounded-lg
