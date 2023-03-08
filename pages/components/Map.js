@@ -5,14 +5,14 @@ import { useEffect } from "react";
 
 mapboxgl.accessToken =
   "pk.eyJ1Ijoia2FpbGViIiwiYSI6ImNsZXZnNTF0NzA2YW8zcm80bXFibW16eDcifQ.CWet-QKeMJXv-X2mbO547Q";
-//   -99.29011, 39.39172  9.1021, 18.2812
+//   -99.29011, 39.39172  9.1021, 18.2812  6.5244, 3.3792
 
 const Map = (props) => {
   useEffect(() => {
     const map = new mapboxgl.Map({
       container: "map",
       style: "mapbox://styles/drakosi/ckvcwq3rwdw4314o3i2ho8tph",
-      center: [6.5244, 3.3792],
+      center: [9.1021, 18.2812],
       zoom: 7,
     });
 

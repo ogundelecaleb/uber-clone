@@ -16,13 +16,13 @@ export default function Home() {
       if (user) {
         setUser({
           name: user.displayName,
-          photoUrl: user.photoURL,
+          photoUrl: user.photoUrl,
         });
       } else {
         setUser(null);
         router.push("/login");
       }
-      console.log(user.photoURL)
+      console.log(user.photoUrl)
     });
   }, []);
   return (
@@ -34,7 +34,7 @@ export default function Home() {
 
           <Profile>
             <Name>{user && user.name}</Name>
-            <UserImage src={user && user.photoUrl} 
+            <UserImage src={user && user.photoURL} 
             onClick={() => signOut(auth)}/>
           </Profile>
         </Header>
