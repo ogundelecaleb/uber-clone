@@ -58,7 +58,10 @@ export default function Home() {
             </ActionButton>
           </Link>
         </ActionButtons>
+        <Link href="/search">
         <InpuButton>Where to?</InpuButton>
+        </Link>
+        
       </ActionItems>
     </Wrapper>
   );
