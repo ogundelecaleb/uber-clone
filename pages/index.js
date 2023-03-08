@@ -16,7 +16,7 @@ export default function Home() {
       if (user) {
         setUser({
           name: user.displayName,
-          photoUrl: user.photoUrl,
+          photoUrl: user.photoURL,
         });
       } else {
         setUser(null);
@@ -34,7 +34,7 @@ export default function Home() {
 
           <Profile>
             <Name>{user && user.name}</Name>
-            <UserImage src={user && user.photoURL} 
+            <UserImage src={user && user.photoUrl} 
             onClick={() => signOut(auth)}/>
           </Profile>
         </Header>
@@ -83,7 +83,7 @@ const Profile = tw.div`
 flex items-center 
 `;
 const Name = tw.div`
-mr-4 w-20`;
+mr-4 w-20 text-gray-200`;
 
 const UserImage = tw.img`
 h-12 w-12 rounded-full border-gray-300 p-px cursor-pointer
