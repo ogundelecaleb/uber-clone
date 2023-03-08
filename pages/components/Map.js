@@ -13,7 +13,7 @@ const Map = (props) => {
       container: "map",
       style: "mapbox://styles/drakosi/ckvcwq3rwdw4314o3i2ho8tph",
       center: [9.1021, 18.2812],
-      zoom: 7,
+      zoom: 3,
     });
 
     if(props.pickUpCoordinate){

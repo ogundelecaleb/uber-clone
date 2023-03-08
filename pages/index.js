@@ -22,7 +22,7 @@ export default function Home() {
         setUser(null);
         router.push("/login");
       }
-      console.log(user.photoUrl)
+      console.log(user.photoURL)
     });
   }, []);
   return (
